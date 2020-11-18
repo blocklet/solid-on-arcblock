@@ -1,7 +1,7 @@
 name: Solid-On-ArcBlock
 version: 0.0.1
 description: Experimental Solid Server Blocklet
-main: .
+main: index.js
 repository:
   type: git
   url: 'git+https://github.com/blocklet/solid-on-arcblock.git'
@@ -15,14 +15,10 @@ publicUrl: /
 adminUrl: ''
 configUrl: ''
 docUrl: ''
-engine:
-  script: .
-  args: []
-  interpreter: node
 capabilities:
   dynamicPathPrefix: false
 scripts:
-  dev: node index.js
+  dev: npm run start
 did: z8iZgmKqbFpUt5bSYtTi4dDqriqiaVcZXVgiF
 community: ''
 documentation: ''
