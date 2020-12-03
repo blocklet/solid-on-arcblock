@@ -11,20 +11,22 @@ author:
 license: MIT
 homepage: 'https://github.com/blocklet/solid-on-arcblock#readme'
 group: dapp
-publicUrl: /
-adminUrl: ''
-configUrl: ''
-docUrl: ''
-capabilities:
-  dynamicPathPrefix: false
 scripts:
   dev: npm run start
 did: z8iZgmKqbFpUt5bSYtTi4dDqriqiaVcZXVgiF
 community: ''
 documentation: ''
-charging:
-  price: 0
-interfaces: []
+interfaces:
+  - type: web
+    name: publicUrl
+    path: /
+    prefix: '*'
+    port: BLOCKLET_PORT
+    protocol: tcp
 environments: []
 screenshots: []
-specVersion: 1.0.0
+specVersion: 1.0.2
+timeout:
+  start: 10
+files:
+  - screenshots
