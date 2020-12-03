@@ -1,0 +1,32 @@
+name: Solid-On-ArcBlock
+version: 0.0.1
+description: Experimental Solid Server Blocklet
+main: index.js
+repository:
+  type: git
+  url: 'git+https://github.com/blocklet/solid-on-arcblock.git'
+keywords: []
+author:
+  name: ArcBlock
+license: MIT
+homepage: 'https://github.com/blocklet/solid-on-arcblock#readme'
+group: dapp
+scripts:
+  dev: npm run start
+did: z8iZgmKqbFpUt5bSYtTi4dDqriqiaVcZXVgiF
+community: ''
+documentation: ''
+interfaces:
+  - type: web
+    name: publicUrl
+    path: /
+    prefix: '*'
+    port: BLOCKLET_PORT
+    protocol: tcp
+environments: []
+screenshots: []
+specVersion: 1.0.2
+timeout:
+  start: 10
+files:
+  - screenshots
