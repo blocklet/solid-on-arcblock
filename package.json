@@ -4,7 +4,9 @@
   "description": "Experimental Solid Server as a Blocklet that runs on ArcBlock Platform",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "bundle": "abtnode bundle --zip",
+    "deploy": "npm run bundle && an deploy .blocklet/bundle"
   },
   "repository": {
     "type": "git",
@@ -22,6 +24,10 @@
   },
   "homepage": "https://github.com/blocklet/solid-on-arcblock#readme",
   "dependencies": {
-    "solid-server": "^5.5.4"
+    "solid-server": "^5.6.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "browserfs": "^1.4.3"
   }
 }

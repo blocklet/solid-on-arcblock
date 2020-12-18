@@ -103,3 +103,13 @@ dist
 # TernJS port file
 .tern-port
 .blocklet
+
+config/
+favicon.ico
+favicon.ico.acl
+index.html
+robots.txt
+robots.txt.acl
+.acl
+.db/
+.well-known
