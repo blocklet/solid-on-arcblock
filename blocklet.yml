@@ -20,7 +20,7 @@ interfaces:
   - type: web
     name: publicUrl
     path: /
-    prefix: '*'
+    prefix: /
     port: BLOCKLET_PORT
     protocol: tcp
 environments: []
