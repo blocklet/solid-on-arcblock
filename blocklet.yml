@@ -28,5 +28,4 @@ screenshots: []
 specVersion: 1.0.2
 timeout:
   start: 60
-files:
-  - screenshots
+files: []
