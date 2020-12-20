@@ -27,6 +27,6 @@ environments: []
 screenshots: []
 specVersion: 1.0.2
 timeout:
-  start: 10
+  start: 60
 files:
   - screenshots

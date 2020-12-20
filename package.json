@@ -1,11 +1,12 @@
 {
   "name": "solid-on-arcblock",
-  "version": "1.0.0",
+  "version": "0.0.1",
+  "private": true,
   "description": "Experimental Solid Server as a Blocklet that runs on ArcBlock Platform",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "bundle": "abtnode bundle --zip",
+    "bundle": "abtnode bundle --zip --create-release",
     "deploy": "npm run bundle && an deploy .blocklet/bundle"
   },
   "repository": {
