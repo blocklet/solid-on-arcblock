@@ -5,7 +5,6 @@ VERSION=$(strip $(shell cat version))
 
 build: init
 	@echo "Building the software..."
-	@yarn link @arcblock/did-playground
 	@yarn build
 
 init: install dep
@@ -13,11 +12,11 @@ init: install dep
 
 install:
 	@echo "Install software required for this repo..."
-	@npm install -g lerna yarn @abtnode/cli @babel/cli
+	@npm install -g yarn @abtnode/cli
 
 dep:
 	@echo "Install dependencies required for this repo..."
-	@lerna bootstrap
+	@yarn
 
 pre-build: install dep
 	@echo "Running scripts before the build..."
@@ -35,16 +34,14 @@ doc:
 
 coverage:
 	@echo "Collecting test coverage ..."
-	@lerna run coverage
 
 lint:
 	@echo "Linting the software..."
-	@lerna run lint
 
 precommit: dep lint test coverage
 
 github-init:
-	@sudo npm install -g lerna
+	@sudo npm install -g yarn @abtnode/cli
 	@make precommit
 
 clean:
@@ -52,7 +49,6 @@ clean:
 
 run:
 	@echo "Running the software..."
-	@yarn start
 
 include .makefiles/*.mk
 
