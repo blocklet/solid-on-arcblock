@@ -1,6 +1,6 @@
 {
   "name": "solid-on-arcblock",
-  "version": "0.0.1",
+  "version": "1.2.0",
   "private": true,
   "description": "Experimental Solid Server as a Blocklet that runs on ArcBlock Platform",
   "main": "index.js",
