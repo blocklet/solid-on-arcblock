@@ -12,7 +12,7 @@ init: install dep
 
 install:
 	@echo "Install software required for this repo..."
-	@npm install -g yarn @abtnode/cli
+	@yarn global add @abtnode/cli
 
 dep:
 	@echo "Install dependencies required for this repo..."
@@ -41,7 +41,6 @@ lint:
 precommit: dep lint test coverage
 
 github-init:
-	@sudo npm install -g yarn @abtnode/cli
 	@make precommit
 
 clean:
