@@ -1,4 +1,4 @@
-name: Solid-On-ArcBlock
+name: solid-on-arcblock
 version: 1.3.0
 description: Experimental Solid Server Blocklet
 main: index.js
