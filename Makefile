@@ -12,7 +12,7 @@ init: install dep
 
 install:
 	@echo "Install software required for this repo..."
-	@yarn global add @abtnode/cli
+	@yarn global add @blocklet/cli
 
 dep:
 	@echo "Install dependencies required for this repo..."

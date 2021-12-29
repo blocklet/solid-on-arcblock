@@ -1,5 +1,5 @@
 name: solid-on-arcblock
-version: 1.3.0
+version: 1.3.2
 description: Experimental Solid Server Blocklet
 main: index.js
 repository:
@@ -13,7 +13,7 @@ homepage: 'https://github.com/blocklet/solid-on-arcblock#readme'
 group: dapp
 scripts:
   dev: npm run start
-did: z8iZgmKqbFpUt5bSYtTi4dDqriqiaVcZXVgiF
+did: z8ia5LUmyaWCwzh1WWn2WnvevK8AK5jyfEtLj
 community: ''
 documentation: ''
 interfaces:
@@ -25,7 +25,16 @@ interfaces:
     protocol: tcp
 environments: []
 screenshots: []
-specVersion: 1.0.2
+specVersion: 1.2.0
 timeout:
   start: 60
 files: []
+payment:
+  price: []
+  share: []
+requirements:
+  abtnode: '>=1.5.15'
+  os: '*'
+  cpu: '*'
+capabilities: {}
+children: []
